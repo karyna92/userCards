@@ -1,0 +1,91 @@
+*{ 
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+html{ 
+    --imgSize: 120px;
+    background-color: beige;
+}
+
+.userList{
+    padding: 35px;
+    background-color: beige;
+
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; 
+    justify-content:center;
+    }
+
+.userCard{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+
+   /* max-width: 700px;
+     min-width: 300px;*/
+     width:600px;
+   /* flex-basis: 600px;
+    flex-grow: 1;
+    flex-wrap: wrap;*/
+    
+}
+
+.photoWrapper{ 
+    width:var(--imgSize);
+    height:var(--imgSize);
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 3px 5px 2px rgb(179, 178, 178);
+    min-width: var(--imgSize);
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.userImg{
+    width:var(--imgSize);
+    height:var(--imgSize);
+    object-fit: cover;
+}
+.textPart{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 15px;
+    width: 75%;
+    flex-grow: 0.5; 
+}
+.userName{
+    font-size: 26px;
+    margin-top: 10px;
+}
+.userPosition{
+    color: rgb(54, 54, 54);
+
+}
+.btn{
+    background-color: rgb(18, 137, 248);
+    color: white;
+    border: rgb(18, 137, 248);
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 12px;
+    margin-bottom: 17px;
+
+}
+.iconList{  
+    padding: 0;
+    }
+.iconsListItem{
+    color: rgb(230, 141, 40);
+    display: inline-block;
+    text-align: right;
+    margin: 5px;
+}
+.footer-section{ 
+    margin-top: auto;    
+    }
